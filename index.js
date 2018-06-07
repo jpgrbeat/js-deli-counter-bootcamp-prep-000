@@ -1,10 +1,14 @@
 var katzDeli =[];
-
+var count = 0;
 function takeANumber(line, name){
   line.push(name);
   let linePos = line.length;
   
   return `Welcome, ${name}. You are number ${linePos} in line.`
+}
+function takeAnumber2(line){
+  count++;
+  return `Welcome, number ${count}. We'll be with you shortly.`
 }
 function nowServing(line){
   if(line.length > 0){
